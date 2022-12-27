@@ -1,0 +1,88 @@
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main Menu */
+#main-menu .nav-link{
+  padding: .5rem 1rem;
+  color: #17a2b8;
+}
+
+
+#main-menu .nav-link:hover,
+#main-menu .nav-link.active,
+.btn-info
+{
+  background: #17a2b8 !important;
+  color: #fff !important;
+  border-radius: 5px;
+}
+#main-menu .nav-link.active:hover,
+.btn-info:hover{
+  opacity: .9;
+}
+
+/* Showcase Carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  background: #262626;
+  padding: 1rem;
+  border: #262626 1rem solid;
+  border-radius: 50%;
+}
+
+/* Events */
+.card-img-overlay{
+  background: rgba(0,0,0, 0.5);
+
+}
+
+#work .card-body {
+  height: 15rem !important;
+}
+
+#work .card img {
+ height: 200px;
+}
+/* Contact Us */
+#contact{
+  background: url('../img/map.jpg') center center/cover no-repeat;
+}
+
+/* Footer */
+
+#footer ul li a{
+  color: #262626;
+  text-decoration: none;
+}
+#footer ul li a:hover{
+  color: #17a2b8;
+
+}
+
+/* !NOT WORKING After some changes in carousel */
+@media only screen and (max-width:576px)  {
+  /* Showcase Carousel */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon{
+    background: #262626;
+    padding: .5rem;
+    border: #262626 .5rem solid;
+    border-radius: 50%;
+  }
+}
+
+
